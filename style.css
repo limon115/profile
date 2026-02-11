@@ -1,0 +1,169 @@
+/* Google Fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  
+  /* 🚨 YOU NEED A BACKGROUND HERE TO SEE THE GLASS! 🚨 */
+  /* I added a colorful image so the glass has something to blur */
+  background-image: url('Bg.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+/* 📱 Samsung Dark Tinted Glass Panel 📱 */
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 370px;
+  width: 100%;
+  padding: 35px 25px;
+  border-radius: 32px; 
+  position: relative;
+  
+  /* The Glass: Dark tint + Heavy Blur */
+  background: rgba(20, 20, 20, 0.2); 
+  backdrop-filter: blur(45px) saturate(120%); 
+  -webkit-backdrop-filter: blur(45px) saturate(120%);
+  
+  border: none; 
+}
+
+/* Inner elements: Darker translucent blobs */
+.image {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  padding: 5px;
+  margin-bottom: 15px;
+  
+  
+  background: rgba(0, 0, 0, 0.3); 
+  border: none; 
+}
+
+.image .profile-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position:50% 20%;
+  border-radius: 50%;
+}
+
+.profile-card .text-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff; 
+}
+
+.text-data .name {
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  align-content: center;
+}
+
+.text-data .job {
+  font-size: 15px;
+  font-weight: 300;
+  opacity: 0.85; 
+}
+
+/* Social Links */
+.profile-card .media-buttons {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.media-buttons .link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 18px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin: 0 8px;
+  text-decoration: none;
+  
+  background: linear-gradient(
+135deg,
+rgba(255, 255, 255, 0.2)
+0%,
+rgba(255, 255, 255, 0.08)
+50%,
+rgba(255, 255, 255, 0.03) 100%);
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.media-buttons .link:hover {
+  background: rgba(255, 255, 255, 0.1); 
+  color: #000;
+  transform: scale(1.05); 
+}
+.media-buttons .link:active {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Buttons */
+.profile-card .buttons {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.buttons .button {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 24px;
+  margin: 0 10px;
+  padding: 10px 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  
+  background: rgba(0, 0, 0, 0.3);
+  border: none;
+}
+
+.buttons .button:hover {
+  background: rgba(255, 255, 255, 1);
+  color: #000;
+}
+
+/* Analytics Section */
+.profile-card .analytics {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  background: rgba(0, 0, 0, 0.20);
+  padding: 12px 20px;
+  border-radius: 24px;
+  border: none;
+}
+.footer{ 
+  font-size: 14px;
+  color: #0009;
+  font-weight: normal;
+  text-align: center;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  justify-content: center;
+}
