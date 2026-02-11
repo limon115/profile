@@ -13,7 +13,7 @@
 <body>
   <div class="profile-card">
     <div class="image">
-      <img src="profile.jpg" alt="Profile Image" class="profile-img"/>
+      <img src="Profile.jpg" alt="Profile Image" class="profile-img"/>
     </div>
 
     <div class="text-data">
@@ -38,6 +38,14 @@
      
       <button class="button"onclick="window.location.href='mailto:khalid.hasan.limon2006@gmail.com?subject=Feedback on App&body=Hi Limon, I have a suggestion:';">
   Message
-</button>
+</button></div>
+    <div class="footer"><footer>
+  <p>&copy; <span id="year"></span> Khalid Hasan Limon.All Rights Reserved.</p>
+</footer>
+
+<script>
+  // This automatically grabs the current year
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script></div>
 </body>
 </html>
